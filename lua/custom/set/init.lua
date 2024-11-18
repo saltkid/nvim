@@ -1,3 +1,5 @@
+require 'custom.set.conform'
+
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
@@ -8,12 +10,12 @@ vim.opt.wrap = false
 vim.opt.incsearch = true
 
 vim.opt.listchars = {
-    tab = '» ',
-    eol = '¬',
-    space = '·',
-    trail = '·',
-    nbsp = '␣',
+  tab = '» ',
+  eol = '¬',
+  space = '·',
+  trail = '·',
+  nbsp = '␣',
 }
 
 -- highlight current line
-vim.opt.cursorlineopt = "number"
+vim.opt.cursorlineopt = 'number'
