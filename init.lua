@@ -956,4 +956,5 @@ require('lazy').setup({
 -- OWN STARTS HERE
 require 'custom.remaps'
 require 'custom.sets'
+require 'custom.autocmds'
 -- OWN ENDS HERE
