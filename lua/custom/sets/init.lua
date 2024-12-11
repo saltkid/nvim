@@ -1,4 +1,4 @@
-require 'custom.set.conform'
+require 'custom.sets.conform'
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -17,5 +17,5 @@ vim.opt.listchars = {
   nbsp = '␣',
 }
 
--- highlight current line
+-- highlight current line number
 vim.opt.cursorlineopt = 'number'
