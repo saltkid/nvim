@@ -957,5 +957,5 @@ require('lazy').setup({
 
 -- OWN STARTS HERE
 require 'custom.remaps'
-require 'custom.set'
+require 'custom.sets'
 -- OWN ENDS HERE
