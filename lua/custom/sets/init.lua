@@ -19,3 +19,9 @@ vim.opt.listchars = {
 
 -- highlight current line number
 vim.opt.cursorlineopt = 'number'
+
+--- folds
+vim.opt.foldenable = true
+vim.opt.foldlevel = 0
+vim.opt.foldlevelstart = 0
+vim.opt.foldmethod = 'marker'
