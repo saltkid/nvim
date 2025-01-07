@@ -1,7 +1,7 @@
 vim.g.mapleader = ' '
 
--- open netrw
-vim.keymap.set('n', '<leader>oe', '<cmd>Oil<cr>', { desc = '[O]pen [E]xplorer' })
+-- open oil
+vim.keymap.set('n', '<leader>oi', '<cmd>Oil<cr>', { desc = '[oi]l.nvim' })
 
 -- keep cursor in middle when doing half page jumps
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
@@ -34,9 +34,10 @@ vim.keymap.set('n', '<S-l>', '<cmd>bnext<cr>', { desc = 'Next buffer' })
 vim.keymap.set('n', '<leader>bd', '<cmd>bdelete<cr>', { desc = 'Delete buffer' })
 vim.keymap.set('n', '<leader>`', '<cmd>e #<cr>', { desc = 'Switch to recent buffer' })
 
--- Diagnostic
+-- floating diagnostic
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rrors under cursor in float' })
 
+-- PLUGINS {{{
 -- lazygit
 vim.keymap.set('n', '<leader>gg', '<cmd>LazyGit<cr>', { desc = 'Open lazygit' })
 
@@ -48,3 +49,7 @@ vim.keymap.set('n', '[t', function()
   require('todo-comments').jump_prev()
 end, { desc = 'Previous todo comment' })
 vim.keymap.set('n', '<leader>st', '<cmd>TodoTelescope keywords=TODO,FIX<cr>', { desc = '[S]earch [T]odos' })
+
+-- screenkey.nvim
+vim.keymap.set('n', '<leader>sc', '<cmd>Screenkey<cr>', { desc = 'Toggle [S]creen[K]ey' })
+-- }}}
